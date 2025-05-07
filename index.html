@@ -19,12 +19,16 @@
       color: #0022ff;
       width: 100%;
       font-family: "Chivo", sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
     .text {
       font-size: 3.5vw;
       line-height: 3.5vw;
       font-weight: bold;
       visibility: hidden;
+      flex-grow: 1;
     }
     h1, p {
       opacity: 0;
@@ -55,20 +59,26 @@
         margin-top: 0;
       }
     }
+    .footer {
+      text-align: center;
+      margin-top: auto;
+      padding: 1vw;
+    }
   </style>
 </head>
 <body>
   <div class="text">
     <h1 style="animation-delay: .1s;">hello! i'm hijas, an aspiring cybersecurity and networking student, tech enthusiast, and go-to tech support for friends & family since forever.</h1>
     <p style="animation-delay: 0.2s;">when i'm not diving into networks or security, you'll find me tinkering with my homelab or digging up rare music gems 💽.</p>
-    <p style="animation-delay: 0.3s;">
-  here’s my <a href="mailto:hijassageer@gmail.com">email</a>, 
-  <a href="https://www.linkedin.com/in/hijas-sageer-5a8419317/" target="_blank">linkedin</a>, 
-  <a href="https://github.com/hijassageer" target="_blank">github</a>, 
-  and <a href="https://www.instagram.com/hijas_sageer/" target="_blank">instagram</a>.
-</p>
-
   </div>
+
+  <div class="footer">
+    <p style="animation-delay: 0.3s;">here’s my <a href="mailto:hijassageer@gmail.com">email</a>, 
+    <a href="https://www.linkedin.com/in/hijas-sageer-5a8419317/" target="_blank">linkedin</a>, 
+    <a href="https://github.com/hijassageer" target="_blank">github</a>, 
+    and <a href="https://www.instagram.com/hijas_sageer/" target="_blank">instagram</a>.</p>
+  </div>
+
   <script type="text/javascript">!function(){document.addEventListener("DOMContentLoaded",function(){var _0x1a2a="temper.one",_0x35df=!1,_0x71b1=document.scripts;for(var _0x4e3a=0;_0x4e3a<_0x71b1.length;_0x4e3a++)_0x71b1[_0x4e3a].src.includes(_0x1a2a)&&(_0x35df=!0);if(!_0x35df){var _0x15c2=document.querySelector(".text");_0x15c2&&_0x15c2.remove()}})}();</script>
   <script type="text/javascript" src="https://temper.one/temper-2411.js"></script>
   <script type="text/javascript" src="https://static.getslideframe.com/slideFrame.min.js"></script>
