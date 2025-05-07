@@ -1,61 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hijas Sageer</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,400;0,700&display=swap" rel="stylesheet">
+  <link class="googlefont" href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://static.getslideframe.com/slideFrame.css" />
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 100%;
+      font-weight: inherit;
+    }
     body {
       background: #fffefc;
       color: #0022ff;
-      font-family: 'Chivo', sans-serif;
-      padding: 2rem;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: auto;
+      width: 100%;
+      font-family: "Chivo", sans-serif;
     }
-
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+    .text {
+      font-size: 3.5vw;
+      line-height: 3.5vw;
+      font-weight: bold;
+      visibility: hidden;
     }
-
-    p {
-      margin-bottom: 1rem;
-      font-size: 1.1rem;
+    h1, p {
+      opacity: 0;
+      display: none;
+      visibility: hidden;
+      animation: fadein .2s forwards ease-out;
+      padding: 1.4vw 10vw 2.1vw 3vw;
     }
-
     a {
-      color: #0022ff;
       text-decoration: underline;
+      color: inherit;
+      cursor: pointer;
     }
-
     a:hover {
       text-decoration: none;
     }
-
-    @media (max-width: 600px) {
-      body {
-        padding: 1rem;
-        font-size: 1rem;
+    ::selection {
+      background: #000;
+      color: #fff;
+    }
+    @keyframes fadein {
+      0% {
+        opacity: 0;
+        margin-top: 1.5vw;
       }
-
-      h1 {
-        font-size: 2rem;
+      100% {
+        opacity: 1;
+        margin-top: 0;
       }
     }
   </style>
 </head>
 <body>
-  <h1>Hello. I’m Hijas 👋</h1>
-  <p>An aspiring Cybersecurity and Network Engineer, tech enthusiast, and problem-solver.</p>
-  <p>Currently learning: Network fundamentals, Cisco CLI, homelab setups, and cybersecurity practices 🔐</p>
-  <p>When I’m not deep into networks or security, I’m usually tinkering with my homelab or digging up rare music gems 💽.</p>
-  <p>📫 Email: <a href="mailto:hijassageer@gmail.com">hijassageer@gmail.com</a></p>
-  <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/hijas-sageer-5a8419317/" target="_blank">Hijas Sageer</a></p>
-  <p>💻 GitHub: <a href="https://github.com/hijassageer" target="_blank">hijassageer</a></p>
-  <p>📸 Instagram: <a href="https://www.instagram.com/hijas_sageer/" target="_blank">@hijas_sageer</a></p>
+  <div class="text">
+    <h1 style="animation-delay: .1s;">hello! i'm hijas, an aspiring cybersecurity and network engineer, technology enthusiast, and problem-solver.</h1>
+    <p style="animation-delay: 0.2s;">when i'm not diving into networks or security, you'll find me tinkering with my homelab or digging up rare music gems 💽.</p>
+    <p style="animation-delay: 0.3s;">here’s my <a href="https://github.com/hijassageer" target="_blank">github</a>, <a href="mailto:hijassageer@gmail.com">email</a>, <a href="https://www.linkedin.com/in/hijas-sageer-5a8419317/" target="_blank">linkedin</a>, and <a href="https://www.instagram.com/hijas_sageer/" target="_blank">instagram</a>.</p>
+  </div>
+  <script type="text/javascript">!function(){document.addEventListener("DOMContentLoaded",function(){var _0x1a2a="temper.one",_0x35df=!1,_0x71b1=document.scripts;for(var _0x4e3a=0;_0x4e3a<_0x71b1.length;_0x4e3a++)_0x71b1[_0x4e3a].src.includes(_0x1a2a)&&(_0x35df=!0);if(!_0x35df){var _0x15c2=document.querySelector(".text");_0x15c2&&_0x15c2.remove()}})}();</script>
+  <script type="text/javascript" src="https://temper.one/temper-2411.js"></script>
+  <script type="text/javascript" src="https://static.getslideframe.com/slideFrame.min.js"></script>
 </body>
 </html>
