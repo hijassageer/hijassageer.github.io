@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Hijas Sageer</title>
+
+  <link class="googlefont" href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://static.getslideframe.com/slideFrame.css" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fffefc;
+      color: #0022ff;
+      width: 100%;
+    }
+
+    .text {
+      font-family: "Chivo", sans-serif;
+      display: none;
+      opacity: 0;
+      font-size: 3.5vw;
+      line-height: 3.5vw;
+      font-weight: bold;
+      font-variant-ligatures: normal;
+      visibility: hidden;
+    }
+
+    h1, .text p {
+      opacity: 0;
+      display: none;
+      visibility: hidden;
+      animation: fadein 0.2s forwards ease-out;
+      padding: 1.4vw 10vw 2.1vw 3vw;
+    }
+
+    .text a {
+      text-decoration: underline;
+      color: inherit;
+      padding: 0 .5vw;
+      margin: 0 -.5vw;
+    }
+
+    .text a:hover {
+      text-decoration: none;
+    }
+
+    ::selection {
+      background: #000;
+      color: #fff;
+    }
+
+    @keyframes fadein {
+      0% { opacity: 0; margin-top: 1.5vw; }
+      100% { opacity: 1; margin-top: 0; }
+    }
+  </style>
+
+  <script type="text/javascript">
+    !function(){
+      document.addEventListener("DOMContentLoaded",function(){
+        var temperSrc = "temper.one", isLoaded = false, scripts = document.scripts;
+        for (var i = 0; i < scripts.length; i++) {
+          if (scripts[i].src.includes(temperSrc)) {
+            isLoaded = true;
+          }
+        }
+        if (!isLoaded) {
+          var textDiv = document.querySelector(".text");
+          if (textDiv) textDiv.remove();
+        }
+      });
+    }();
+  </script>
+</head>
+
+<body style="display:none;">
+  <div class="text">
+    <h1 style="animation-delay: .1s;">Hello. I’m Hijas — an aspiring Cybersecurity and Network Engineer, tech enthusiast, and curious problem-solver.</h1>
+    <p style="animation-delay: 0.2s;">When I’m not deep into networks or security, I’m probably tinkering with my homelab or digging up rare music gems 💽.</p>
+    <p style="animation-delay: 0.3s;">
+      Here’s my
+      <a target="_blank" href="https://github.com/hijassageer">GitHub</a>,
+      <a target="_blank" href="mailto:hijassageer@gmail.com">email</a>,
+      <a target="_blank" href="https://www.linkedin.com/in/hijas-sageer-5a8419317/">LinkedIn</a>,
+      and <a target="_blank" href="https://www.instagram.com/hijas_sageer/">Instagram</a>.
+    </p>
+  </div>
+
+  <script type="text/javascript">const fs = 3.5;</script>
+  <script type="text/javascript" src="https://temper.one/temper-2411.js"></script>
+  <script type="text/javascript" src="https://static.getslideframe.com/slideFrame.min.js"></script>
+</body>
+</html>
